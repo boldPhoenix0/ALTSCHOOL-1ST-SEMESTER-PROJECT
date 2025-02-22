@@ -1,0 +1,1140 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", serif;
+}
+.first-section {
+  background: linear-gradient(180deg, #dbdb54, #75afe9);
+
+  padding-bottom: 50px;
+}
+/* Design for the Header  */
+.first-section nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 140px;
+}
+.first-section nav img {
+  width: 155px;
+  height: 40;
+  padding: 8px;
+}
+
+.first-section nav .nav-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  margin: 40px;
+  font-size: 18px;
+}
+.first-section nav .nav-links .Features:after {
+  content: " \25BE";
+}
+.first-section nav .nav-links .my-url {
+  color: #0166fe;
+}
+
+.first-section nav .Log-in a {
+  text-decoration: none;
+  margin: 0px 20px;
+  font-size: 16px;
+}
+.first-section nav .Log-in button {
+  width: 142px;
+  gap: 10px;
+  border-radius: 100px;
+  padding: 12px 24px;
+  background: #0065fe;
+  border: none;
+  color: white;
+}
+/* Design for Front-Page */
+.first-section .front-page {
+  text-align: center;
+  width: 948;
+  padding: 162px 246px 0px;
+}
+.first-section .front-page h1 {
+  font-size: 46px;
+  line-height: 96px;
+}
+.first-section .front-page h1 span {
+  color: #005ae2;
+}
+.first-section .front-page p {
+  width: 781px;
+  margin: auto;
+  font-size: 16px;
+  line-height: 28px;
+  padding: 20px;
+}
+.first-section .front-page button {
+  width: 142px;
+  gap: 10px;
+  border-radius: 100px;
+  padding: 12px 24px;
+  background: #0065fe;
+  border: none;
+  color: white;
+  margin: 30px 40px;
+}
+.first-section .front-page a {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 18.75px;
+  letter-spacing: 0%;
+  color: #0065fe;
+  font-weight: 500;
+}
+.first-section .main-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.first-section .main-images img {
+  background-image: url("./Asset/Image/Vector\ 2.svg");
+  background-size: 339px 262px;
+  background-repeat: no-repeat;
+  padding: 20px;
+}
+.last-nav-image {
+  width: 100%;
+  margin-top: 20px;
+}
+/* Design FOr Section Two */
+.Section-two {
+  display: flex;
+  align-items: center;
+  padding: 60px 140px;
+  background-color: #f8fbfd;
+}
+
+.Section-two .Possibilities h2 {
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 0%;
+}
+.Section-two .Possibilities h2 span {
+  color: #005ae2;
+}
+.Section-two .headers-container {
+  display: flex;
+  justify-content: center;
+  gap: 72px;
+  padding-left: 50px;
+}
+
+.Section-two .headers-container .headers-subhead {
+  width: 150px;
+}
+.Section-two .headers-container .headers-subhead h3 {
+  font-size: 32px;
+  font-weight: 600;
+}
+.Section-two .headers-container .headers-subhead p {
+  font-size: 16px;
+  font-weight: 400;
+}
+/* Design for Fearture Section */
+/* Features Section */
+.features {
+  display: flex;
+  padding: 60px 20px;
+  margin: 0px 100px;
+}
+.features .why-choose-scissors {
+  width: 40%;
+}
+.features .why-choose-scissors .Image-why {
+  display: flex;
+  gap: 20px;
+}
+
+.features .why-choose-scissors h2 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 40px;
+  line-height: 32px;
+  letter-spacing: 0%;
+}
+.features .why-choose-scissors h2 span {
+  color: #005ae2;
+}
+
+.features .why-choose-scissors .description {
+  max-width: 600px;
+  color: #666;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  padding: 0px 40px 0 20px;
+}
+/* Design for Feature Grid  */
+.feature-grid {
+  display: grid;
+  width: 60%;
+  gap: 3rem;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.feature-grid .feature {
+  background: white;
+  line-height: 30px;
+}
+
+.feature-grid .feature img {
+  width: 56px;
+  height: 56px;
+  margin-bottom: 20px;
+}
+
+.feature-grid .feature h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.feature-grid .feature p {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+}
+/* Design for middle container */
+.middle-container {
+  width: 560px;
+  margin: auto;
+}
+.middle-container .sub-middle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 10px;
+}
+.middle-container .sub-middle-container h2 {
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.middle-container .sub-middle-container h2 span {
+  color: #005ae2;
+}
+.middle-container p {
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+/* Pricing Section*/
+
+.Pricing {
+  padding: 60px;
+  color: #141414;
+}
+
+.Pricing .price-card {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+.Pricing .professional {
+  background-color: #1e3448;
+  color: white;
+  padding: 80px 40px;
+  border-radius: 12px;
+  position: relative;
+  top: -50px;
+  height: 550px;
+}
+
+.Pricing .basic {
+  background-color: none;
+  color: #141414;
+  padding: 40px 60px;
+  border-radius: 12px;
+  border: 1px solid #005ae2;
+  height: 455px;
+}
+.Pricing .teams {
+  background-color: none;
+  color: #141414;
+  padding: 40px;
+  border-radius: 12px;
+  border: 1px solid #005ae2;
+  height: 455px;
+}
+.price-card .basic .BPT,
+.price-card .professional .BPT,
+.price-card .teams .BPT {
+  padding-bottom: 30px;
+}
+.Pricing .price-card p {
+  line-height: 32px;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0%;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+.Pricing .price-card h2 {
+  font-size: 32px;
+  line-height: 48px;
+  padding-bottom: 10px;
+}
+
+.Pricing .price-card ul {
+  list-style-type: none;
+  padding: 0;
+}
+.Pricing .price-card li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 10px 0;
+}
+
+.price-button {
+  align-items: center;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.price-button button {
+  border-radius: 100px;
+  padding: 10px;
+}
+.price-button .custom-p {
+  background-color: white;
+  color: #0065fe;
+  border-color: #0065fe;
+  border-radius: 100px;
+  border-width: 1px;
+  padding: 12px 24px;
+}
+.price-button .select-p {
+  background-color: #0065fe;
+  color: white;
+  border-color: #0065fe;
+  text-align: center;
+  border-radius: 100px;
+  border: none;
+  padding: 12px 40px;
+}
+
+/* Form Section*/
+.form-section {
+  background: url("./Asset/Image/stacked-waves.svg") no-repeat center
+    center/cover;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 70px 0;
+}
+.form-section .form-container {
+  background-color: #ffffff;
+  border-radius: 12px;
+  width: 476px;
+}
+.form-section .form-container .form {
+  padding: 30px;
+}
+.form-section .form-container .form .form-alias {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  gap: 20px;
+}
+
+.form-section .form-container .form input,
+.form-section .form-container .form select {
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #3284ff;
+  color: #005ae2;
+}
+.form-section .form-container .form input::placeholder {
+  color: #005ae2;
+}
+.form-section .form-container .form input:hover,
+.form-section .form-container .form input:focus {
+  outline: #005ae2;
+}
+
+.form-section .form-container button {
+  width: 60%;
+  margin: 0 100px;
+  background-color: #005ae2;
+  border: none;
+  padding: 10px;
+  border-radius: 100px;
+  color: white;
+  font-size: 14px;
+}
+.form-section .form-container p {
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 30px 70px;
+  color: #4991ff;
+}
+.form-section .form-container span {
+  color: #3284ff;
+  font-weight: bold;
+}
+
+/* FAQS SECTION */
+.Faqs {
+  padding-bottom: 100px;
+  background: url("./Asset/Image/blob-background.svg") no-repeat center
+    center/cover;
+}
+.Faqs .faq-main-con {
+  width: 60%;
+  margin: auto;
+}
+.Faqs .faq-main-con .faqs-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 60px;
+  padding-top: 40px;
+}
+.Faqs .faq-main-con .faqs-image h2 {
+  font-size: 40px;
+}
+.Faqs .faq-main-con .first-faq {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Faqs .faq-main-con h6 {
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0px 30px 15px 10px;
+}
+.Faqs .faq-main-con p {
+  font-size: 20px;
+  line-height: 32px;
+  color: #141414;
+  padding: 20px;
+}
+
+/* Get Started Section*/
+.getstarted {
+  background: url("./Asset/Image/stacked-waves.svg") no-repeat center
+    center/cover;
+  width: 100%;
+}
+.getstarted .get-started-con {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding: 100px;
+}
+
+.getstarted h3 {
+  text-align: center;
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: bold;
+  color: white;
+}
+.getstarted button {
+  margin: 30px 50px;
+  background-color: #005ae2;
+  border: 1px solid #005ae2;
+  padding: 10px 40px;
+  border-radius: 100px;
+  color: white;
+  font-size: 16px;
+}
+
+/* Last Page Section */
+.info-con {
+  background: url("./Asset/Image/blob-background.svg") no-repeat center
+    center/cover;
+  padding-bottom: 50px;
+}
+.info-con .information-container {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  gap: 70px;
+}
+
+.info-con .information-container .socials .scissor-image-con {
+  display: flex;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 60px;
+}
+.info-con .information-container .socials .scissor-image-con h2 {
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0%;
+}
+
+.info-con .information-container .socials .social-logo {
+  margin-top: 30px;
+  display: flex;
+  gap: 20px;
+}
+/* Design for sicssor  Information Container*/
+.info-con .scissor-container {
+  margin-top: 60px;
+}
+
+.info-con .scissor-container .scissor-container1 {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 90px;
+}
+.info-con .scissor-container .scissor-container2 {
+  display: flex;
+  gap: 80px;
+}
+.info-con .scissor-container .scissor-container1 h4,
+.info-con .scissor-container .scissor-container2 h4 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #071827;
+}
+.info-con .scissor-container .scissor-container1 p,
+.info-con .scissor-container .scissor-container2 p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #112232;
+}
+
+/* Footer*/
+footer {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 150px;
+  size: 14px;
+  line-height: 20px;
+  color: #112232;
+}
+@media screen and (max-width: 1024px) {
+  /* Design for the Header  */
+  .first-section nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  .first-section nav img {
+    width: 120px;
+  }
+
+  .first-section nav .nav-links a {
+    font-weight: 400;
+    margin: 10px;
+    font-size: 16px;
+  }
+
+  .first-section nav .Log-in a {
+    text-decoration: none;
+    margin: 0px 10px;
+    font-size: 16px;
+  }
+  .first-section nav .Log-in button {
+    width: 100px;
+    gap: 10px;
+    border-radius: 100px;
+    padding: 12px 16px;
+  }
+
+  /* Design for Front-Page */
+  .first-section .front-page {
+    width: 90%;
+    margin: auto;
+    padding: 80px 20px 30px;
+  }
+  .first-section .front-page h1 {
+    font-size: 40px;
+    line-height: 56px;
+  }
+
+  .first-section .front-page p {
+    width: 100%;
+  }
+  .first-section .front-page button {
+    width: 142px;
+    margin: 20px 20px;
+  }
+
+  .first-section .main-images {
+    width: 60%;
+    margin: auto;
+  }
+  .first-section .main-images img {
+    background-size: 239px 210px;
+    padding: 20px 0px;
+    width: 600px;
+  }
+  .last-nav-image {
+    width: 100%;
+    margin-top: 30px;
+  }
+  /* Design FOr Section Two */
+  .Section-two {
+    padding: 40px 20px;
+    width: 100%;
+  }
+
+  .Section-two .Possibilities h2 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .Section-two .headers-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-left: 20px;
+    width: 550px;
+  }
+  .Section-two .headers-container .headers-subhead h3 {
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .Section-two .headers-container .headers-subhead p {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  /* Design for Fearture Section */
+  /* Features Section */
+  .features {
+    display: flex;
+    padding: 10px 20px 40px;
+    margin: 0px 20px;
+    gap: 20px;
+  }
+
+  .features .why-choose-scissors .Image-why img {
+    height: 56px;
+  }
+
+  .features .why-choose-scissors h2 {
+    font-size: 40px;
+    line-height: 42px;
+    letter-spacing: 0%;
+  }
+  .features .why-choose-scissors h2 span {
+    color: #005ae2;
+  }
+
+  .features .why-choose-scissors .description {
+    max-width: 600px;
+    color: #666;
+    font-size: 16px;
+    line-height: 28px;
+
+    padding: 0px 40px 0 20px;
+  }
+  /* Design for Feature Grid  */
+  .feature-grid {
+    gap: 2rem;
+  }
+
+  .feature-grid .feature img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .feature-grid .feature p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  /* Pricing Section*/
+
+  .Pricing .price-card {
+    padding: 30px;
+  }
+  .Pricing .professional {
+    padding: 60px 40px 40px;
+  }
+
+  .Pricing .basic {
+    padding: 20px;
+  }
+  .Pricing .teams {
+    padding: 20px;
+  }
+  .price-card .basic .BPT,
+  .price-card .professional .BPT,
+  .price-card .teams .BPT {
+    padding-bottom: 10px;
+  }
+  .Pricing .price-card p {
+    line-height: 24px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .Pricing .price-card h2 {
+    font-size: 28px;
+    line-height: 30px;
+    padding-bottom: 10px;
+  }
+
+  .Pricing .price-card ul {
+    padding: 20px;
+  }
+  .Pricing .price-card li {
+    gap: 10px;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 0px;
+  }
+
+  /* Form Section*/
+  .form-section {
+    padding: 50px 0;
+  }
+  .form-section .form-container {
+    width: 376px;
+  }
+  .form-section .form-container .form {
+    padding: 20px;
+  }
+
+  .form-section .form-container button {
+    width: 80%;
+    margin: 0 40px;
+    padding: 15px;
+    font-size: 16px;
+  }
+  .form-section .form-container p {
+    padding: 30px;
+  }
+
+  /* FAQS SECTION */
+  .Faqs {
+    width: 100%;
+    padding-bottom: 100px;
+    background: url("./Asset/Image/blob-background.svg") no-repeat center
+      center/cover;
+  }
+  .Faqs .faq-main-con {
+    width: 90%;
+    margin: auto;
+  }
+  .Faqs .faq-main-con .faqs-image {
+    gap: 20px;
+    padding: 40px;
+  }
+  .Faqs .faq-main-con .faqs-image img {
+    height: 50px;
+  }
+  .Faqs .faq-main-con .faqs-image h2 {
+    font-size: 38px;
+  }
+
+  /* Get Started Section*/
+
+  /* Get Started Section*/
+  .getstarted {
+    padding: 50px;
+  }
+  .getstarted .get-started-con {
+    padding: 0px;
+  }
+
+  .getstarted h3 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .getstarted button {
+    margin: 20px 0px;
+    padding: 10px 40px;
+  }
+  /* Last Page Section */
+
+  .info-con .information-container {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    gap: 50px;
+  }
+
+  .info-con .information-container .socials .scissor-image-con {
+    display: flex;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 60px;
+  }
+  .info-con .information-container .socials .scissor-image-con h2 {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0%;
+  }
+
+  .info-con .information-container .socials .social-logo {
+    gap: 20px;
+  }
+  /* Design for sicssor  Information Container*/
+  .info-con .scissor-container {
+    margin-top: 60px;
+  }
+
+  .info-con .scissor-container .scissor-container1 {
+    gap: 20px;
+  }
+  .info-con .scissor-container .scissor-container2 {
+    gap: 20px;
+  }
+  .info-con .scissor-container .scissor-container1 h4,
+  .info-con .scissor-container .scissor-container2 h4 {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #071827;
+  }
+  .info-con .scissor-container .scissor-container1 p,
+  .info-con .scissor-container .scissor-container2 p {
+    font-size: 14px;
+  }
+
+  /* Footer*/
+  footer {
+    padding-right: 80px;
+    size: 12px;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* Design for the Header  */
+  .first-section nav {
+    padding: 10px 10px;
+  }
+  .first-section nav img {
+    width: 100px;
+  }
+
+  .first-section nav .nav-links a {
+    display: none;
+  }
+
+  .first-section nav .Log-in a {
+    font-size: 14px;
+  }
+  .first-section nav .Log-in button {
+    width: 100px;
+    padding: 8px 10px;
+  }
+
+  /* Design for Front-Page */
+  .first-section .front-page {
+    width: 100%;
+    padding: 62px 10px;
+    text-align: center;
+  }
+  .first-section .front-page h1 {
+    font-size: 20px;
+    line-height: 26px;
+    padding-bottom: 10px;
+  }
+  .first-section .front-page img {
+    padding-bottom: 30px;
+  }
+  .first-section .front-page p {
+    width: 100%;
+    font-size: 16px;
+    line-height: 28px;
+    padding: 10px;
+  }
+  .first-section .front-page button {
+    width: 120px;
+    margin: 15px 10px;
+  }
+  .first-section .front-page a {
+    font-size: 14px;
+  }
+
+  .first-section .main-images img {
+    width: 400px;
+    background-size: 220px 142px;
+    padding: 20px;
+  }
+  .last-nav-image {
+    width: 100%;
+    margin-top: 30px;
+  }
+  /* Design FOr Section Two */
+  .Section-two {
+    display: block;
+    padding: 20px 20px;
+  }
+
+  .Section-two .Possibilities h2 {
+    font-size: 30px;
+    text-align: center;
+    line-height: 40px;
+    padding-bottom: 20px;
+  }
+
+  .Section-two .headers-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-left: 0px;
+    width: 100%;
+  }
+
+  .Section-two .headers-container .headers-subhead {
+    width: 100px;
+  }
+  .Section-two .headers-container .headers-subhead h3 {
+    font-size: 22px;
+    font-weight: 600;
+  }
+  .Section-two .headers-container .headers-subhead p {
+    font-size: 12px;
+  }
+  /* Design for Fearture Section */
+  /* Features Section */
+  .features {
+    display: block;
+    padding: 60px 10px;
+    margin: 10px 20px;
+  }
+  .features .why-choose-scissors {
+    width: 100%;
+  }
+  .features .why-choose-scissors .Image-why {
+    width: 80%;
+    margin: auto;
+    gap: 10px;
+  }
+
+  .features .why-choose-scissors h2 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    line-height: 42px;
+  }
+
+  .features .why-choose-scissors .description {
+    font-size: 16px;
+    line-height: 28px;
+    padding: 20px 0px 40px;
+  }
+  /* Design for Feature Grid  */
+  .feature-grid {
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .feature-grid .feature {
+    line-height: 30px;
+  }
+
+  .feature-grid .feature img {
+    width: 40px;
+    height: 56px;
+  }
+
+  .feature-grid .feature h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .feature-grid .feature p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  /* Design for middle container */
+  .middle-container {
+    width: 100%;
+    padding: 20px;
+  }
+  .middle-container .sub-middle-container {
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 10px;
+  }
+  .middle-container .sub-middle-container h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .middle-container .sub-middle-container img {
+    height: 0px;
+  }
+
+  .middle-container p {
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0%;
+  }
+  /* Pricing Section*/
+
+  .Pricing {
+    padding: 30px;
+    color: #141414;
+  }
+
+  .Pricing .price-card {
+    display: block;
+    padding: 40px 0;
+  }
+  .Pricing .professional {
+    padding: 40px;
+    top: 0px;
+    height: 500px;
+    margin: 40px 0;
+  }
+
+  .Pricing .basic {
+    padding: 50px 30px;
+    height: 450px;
+  }
+  .Pricing .teams {
+    padding: 40px 20px;
+    height: 450px;
+  }
+  .price-card .basic .BPT,
+  .price-card .professional .BPT,
+  .price-card .teams .BPT {
+    padding-bottom: 30px;
+  }
+  .Pricing .price-card p {
+    font-size: 24px;
+    line-height: 36px;
+  }
+  .Pricing .price-card h2 {
+    font-size: 32px;
+    line-height: 48px;
+    padding-bottom: 10px;
+  }
+
+  .Pricing .price-card ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  .Pricing .price-card li {
+    font-size: 16px;
+    line-height: 36px;
+  }
+
+  .price-button {
+    align-items: center;
+      
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .price-button button {
+    border-radius: 100px;
+    padding: 10px;
+  }
+  .price-button .custom-p {
+    border-width: 1px;
+    padding: 12px 24px;
+    font-size: 10px; 
+  }
+  .price-button .select-p {
+    padding: 12px 40px;
+    font-size: 10px;
+  }
+
+/* Form Section*/
+.form-section {
+  padding: 50px 0;
+}
+.form-section .form-container {
+  width: 376px;
+}
+.form-section .form-container .form {
+  padding: 20px;
+}
+
+.form-section .form-container button {
+  width: 80%;
+  margin: 0 40px;
+  padding: 15px;
+  font-size: 16px;
+}
+.form-section .form-container p {
+  padding: 30px;
+}
+
+
+/* FAQS SECTION */
+
+.Faqs .faq-main-con {
+  width: 100%;
+ padding: 20px;
+}
+.Faqs .faq-main-con .faqs-image {
+  gap: 20px;
+  padding-bottom: 40px;
+  padding-top: 20px;
+}
+.Faqs .faq-main-con .faqs-image h2 {
+  font-size: 30px;
+}
+.Faqs .faq-main-con .faqs-image img {
+  height: 35px;
+}
+.Faqs .faq-main-con h6 {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 0px 30px 15px 10px;
+}
+.Faqs .faq-main-con p {
+  font-size: 18px; 
+  padding: 10px;
+}
+
+/* Get Started Section*/
+.getstarted .get-started-con {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding: 30px;
+}
+
+.getstarted h3 {
+  text-align: center;
+  font-size: 30px;
+  line-height: 40px; 
+}
+.getstarted button {
+  margin: 30px 0px;
+  padding: 10px 40px;
+  font-size: 14px;
+}
+
+/* Last Page Section */
+.information-container .socials {
+  margin: auto; 
+  padding-bottom: 30px;
+}
+.info-con .scissor-container {
+display: none;
+}
+
+
+/* Footer*/
+footer {
+width: 90%;
+margin: auto;
+  padding: 10px;
+  size: 12px;
+  
+}
+}
+
+  
+

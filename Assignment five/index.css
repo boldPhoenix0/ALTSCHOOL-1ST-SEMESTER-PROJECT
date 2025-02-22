@@ -1,0 +1,667 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Lato", serif;
+  background: #f5f8fa;
+  /* height: 100vh; */
+  padding-bottom: 40px;
+}
+/* Design for the Header */
+header {
+  padding: 20px 30px;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav {
+  margin-bottom: 30px;
+}
+.nav-links{
+  width  : 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  position: relative; 
+  padding: 0px 40px;
+
+}
+.logo img{
+  width: 200px;
+  height: 39px;
+}
+.checkbtn{
+  display: flex;
+}
+.checkbtn li{
+  padding-left: 50px;
+}
+.checkbtn li a{
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.15s ease-in-out;
+  position: relative;
+  color: black;
+  font-size: 14px;
+  font-weight: 700;
+}
+.checkbtn li a::after{
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #dbd7c4;
+  transform: scaleX(0);
+  transition: transform 0.15s ease-in-out;
+}
+.checkbtn li a:hover::after{
+  width: 100%;
+}
+header nav ul .checkbtn a:hover {
+  color: #ffffff;
+  background-color: #1179bf;
+  padding: 10px 20px;
+}
+.open-menu, .close-menu{
+  display: none;
+  position: absolute;
+  color:black;
+  cursor: pointer;
+  font-size: 1.5rem;
+  }
+  .open-menu{
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+  }
+  .close-menu{
+      top: 20px;
+      right: 20px;
+  }
+  #check{
+      display: none;
+  }
+
+
+header nav  button {
+  width: 91px;
+  height: 40px;
+  background: #f5f8fa;
+  border: 2px solid;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+
+/* Design for Section */
+section {
+  width: 60%;
+  border-radius: 10px;
+  margin: auto;
+  background-color: #ffffff;
+  /* box-shadow: ; */
+  display: flex;
+  margin-top: 60px;
+  box-shadow: 0px 5px 15px 0px #0000000d;
+
+  box-shadow: 0px 15px 35px 0px #2b404e18;
+}
+section .container {
+  width: 65%;
+}
+
+section .container h1 {
+  padding: 40px 0px 50px 50px;
+  border-bottom: 3px solid rgb(234, 234, 242);
+  font-family: Lato;
+  font-size: 30px;
+  font-weight: 400;
+  text-shadow: -2px 4px #85808040, -2px 4px #786d6d40, 0px 0px #201e1e;
+}
+/* Dsign for first container */
+
+.basic-infos-container {
+  border-bottom: 3px solid rgb(234, 234, 242);
+}
+section .container .basic-info {
+  display: flex;
+  align-items: center;
+  padding: 25px 0px 0px 50px;
+  gap: 15px;
+}
+section .container .basic-info .number {
+  border: 2px solid #5e92c9;
+  color: #5e92c9;
+  border-radius: 100px;
+  padding: 3px 8px;
+}
+.container .forms {
+  display: flex;
+  padding: 25px 0px 10px 50px;
+  gap: 40px;
+  line-height: 30px;
+  font-size: 14px;
+  font-weight: 400;
+  word-spacing: 5px;
+}
+
+.container .forms input {
+  display: block;
+  width: 227px;
+  height: 36px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background: #edeff2;
+}
+.container .email-box {
+  padding: 0px 0px 50px 50px;
+  line-height: 40px;
+  font-size: 14px;
+  font-weight: 400;
+}
+.container .email-box input {
+  display: block;
+  width: 370px;
+  height: 36px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #edeff2;
+}
+.forms input:hover,
+.forms input:focus,
+.email-box input:hover,
+.email-box input:focus {
+  outline: none;
+}
+/* Design for payment information */
+.container .payment-info {
+  border-bottom: 3px solid rgb(234, 234, 242);
+}
+.container .payment-info .credit-card {
+  gap: 40px;
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  word-spacing: 5px;
+  line-height: 40px;
+  margin-bottom: 30px;
+  padding: 20px 0px 10px 50px;
+}
+.container .payment-info .credit-card input {
+  padding: 10px;
+  height: 36px;
+  background: #edeff2;
+  border: none;
+}
+.card-input {
+  display: flex;
+}
+.card-num {
+  width: 330px;
+}
+
+.card-input #MM-YY {
+  width: 100px;
+  text-align: center;
+}
+.card-input #cvv {
+  width: 70px;
+  text-align: center;
+}
+.credit-card input:hover,
+.credit-card input:focus {
+  outline: none;
+}
+
+/*Design for button-container */
+.button-container {
+  padding: 40px 40px 10px 50px;
+  /* align-items: center; */
+}
+.button-container .first-button {
+  width: 100%;
+  height: 52px;
+  background: #038e7d;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  color: #ffffff;
+}
+/*  Design for help center */
+.help-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+.button-container .help-center h2 {
+  border: 3px solid #5e92c9;
+  color: #5e92c9;
+  border-radius: 100px;
+  padding: 0px 8px;
+  font-size: 22px;
+}
+.button-container .help-center p {
+  font-size: 16px;
+  font-weight: 700;
+}
+.button-container .help-center p span {
+  color: rgb(54, 54, 54);
+}
+.powered-by-stripe {
+  font-size: 12px;
+  color: #ffffff;
+  width: 140px;
+  margin: auto;
+  background-color: #aab1b9;
+  text-align: center;
+  border-radius: 4px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.powered-by-stripe span {
+  font-weight: bold;
+  font-size: 22px;
+  padding: 2px 5px;
+  align-items: center;
+}
+
+/* Design for the second container */
+section .second-container {
+  width: 35%;
+  background-color: #1179bf;
+  border-radius: 0px 10px 10px 0px;
+  padding: 50px;
+}
+
+.info-page {
+  color: white;
+  border-bottom: 4px solid #2d89c6;
+}
+
+.Freelancer {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.currency {
+  font-size: 24px;
+  vertical-align: top;
+}
+
+.amount {
+  font-size: 48px;
+}
+
+.duration {
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.info-renewal {
+  font-size: 16px;
+  font-style: italic;
+  margin-bottom: 15px;
+  width: 180px;
+  letter-spacing: 1px;
+}
+
+.features {
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+.features li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.checkmark {
+  font-size: 16px;
+  margin-right: 10px;
+  color: white;
+  border: 2px solid;
+  border-radius: 50px;
+  padding: 1px 5px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.additional-info {
+  font-size: 16px;
+  font-family: Lato;
+  width: 200px;
+  font-weight: 400;
+  line-height: 30px;
+  word-spacing: 2px;
+  margin-bottom: 50px;
+}
+
+.additional-info a {
+  color: white;
+  text-decoration: underline;
+  font-weight: 700;
+}
+.last-para {
+  color: white;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  line-height: 25px;
+}
+.last-image-con {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  gap: 10px;
+}
+.last-image-con img {
+  border-radius: 50px;
+}
+.terms-services {
+  text-align: center;
+  margin-top: 30px;
+  color: #9aa0a3;
+  word-spacing: 2px;
+}
+.terms-services span {
+  color: #5186a0;
+}
+@media screen and (max-width: 1024px) {
+  /* Design for the Header */
+  header {
+    padding: 20px 15px;
+  }
+
+  header nav img {
+    width: 150px;
+  }
+
+  header nav .links button {
+    width: 71px;
+  }
+
+  /* Design for Section */
+  section {
+    width: 90%;
+
+    margin-top: 40px;
+  }
+  section .container {
+    width: 65%;
+  }
+
+  section .container h1 {
+    padding: 30px 0px 40px 20px;
+    font-size: 28px;
+  }
+
+  /* Dsign for first container */
+  .Numn {
+    font-size: 18px;
+  }
+  section .container .basic-info {
+    padding: 25px 0px 10px 20px;
+  }
+
+  section .container .basic-info .number {
+    padding: 2px 6px;
+    font-size: 16px;
+  }
+  .container .forms {
+    display: flex;
+    padding: 15px 0px 10px 20px;
+  }
+
+  .container .forms input {
+    width: 200px;
+    height: 30px;
+  }
+  .container .email-box {
+    padding: 0px 0px 50px 20px;
+  }
+  .container .email-box input {
+    display: block;
+    width: 350px;
+    height: 30px;
+  }
+
+  /* Design for payment information */
+
+  .container .payment-info .credit-card {
+    margin-bottom: 20px;
+    padding: 10px 0px 10px 20px;
+  }
+  .container .payment-info .credit-card input {
+    height: 30px;
+  }
+
+  .card-num {
+    width: 300px;
+  }
+
+  .card-input #MM-YY {
+    width: 80px;
+  }
+  .card-input #cvv {
+    width: 50px;
+  }
+
+  /*Design for button-container */
+  .button-container {
+    padding: 20px 20px 10px 20px;
+  }
+  .button-container .first-button {
+    width: 100%;
+    height: 45px;
+    font-size: 16px;
+  }
+  /*  Design for help center */
+
+  .button-container .help-center h2 {
+    font-size: 18px;
+  }
+  .button-container .help-center p {
+    font-size: 16px;
+  }
+
+  .powered-by-stripe span {
+    font-size: 20px;
+  }
+
+  /* Design for the second container */
+  section .second-container {
+    padding: 30px;
+  }
+
+  .Freelancer {
+    font-size: 22px;
+  }
+
+  .price {
+    font-size: 30px;
+  }
+
+  .currency {
+    font-size: 22px;
+  }
+
+  .amount {
+    font-size: 42px;
+  }
+
+  .duration {
+    font-size: 16px;
+  }
+
+  .info-renewal {
+    font-size: 16px;
+  }
+
+  .checkmark {
+    font-size: 14px;
+    padding: 1px 6px;
+  }
+
+  .last-para {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  /* Design for the Header */
+  header {
+    padding: 0px;
+  }  
+   .checkbtn{ 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 60%;
+    height: 70%;
+    top: 0;
+    right:-100%;
+    z-index: 100;           
+    background-color: #78C3FB;
+    transition: all 0.2s ease-in-out;
+    border-radius: 0px 0px 0px 10px;
+}
+.checkbtn li{
+padding-top: 0px;
+}
+.checkbtn li a{
+    font-size: 18px;    
+    color: #231f45;
+    transition: 0.15s ease-in-out;
+  padding: 20px;
+}
+.open-menu, .close-menu{
+    display: block;
+}
+#check:checked ~ .checkbtn{
+    right: 0;
+}
+header nav  button{
+  display: none;
+}
+.logo img{
+  width: 150px;
+    height: 80px;
+}
+header nav ul .checkbtn a:hover {
+  color: #ffffff;
+  background-color: #103c58;
+  padding: 10px 20px;
+}
+
+  /* Design for Section */
+  section {
+    width: 90%;
+    border-radius: 0;
+    margin-top: 0px;
+  }
+  section .container {
+    width: 100%;
+  }
+
+  section .container h1 {
+    padding: 30px 0px 40px 20px;
+    font-size: 28px;
+  }
+
+  /* Dsign for first container */
+  .Numn {
+    font-size: 18px;
+  }
+
+  section .container .basic-info .number {
+    padding: 2px 6px;
+    font-size: 16px;
+  }
+  .container .forms {
+    display: block;
+    width: 100%;
+  }
+
+  .container .forms input {
+    width: 95%;
+    height: 30px;
+  }
+
+  .container .email-box input {
+    display: block;
+    width: 95%;
+    height: 30px;
+  }
+
+  /* Design for payment information */
+
+  .container .payment-info .credit-card {
+    margin-bottom: 10px;
+    padding: 0px 0px 10px 20px;
+  }
+  .container .payment-info .credit-card input {
+    height: 30px;
+  }
+  .container .payment-info .credit-card .card-input {
+    display: block;
+  }
+
+  /*Design for button-container */
+  .button-container {
+    padding: 20px 20px 10px 20px;
+    width: 80%;
+    margin: auto;
+  }
+  .button-container .first-button {
+    font-size: 18px;
+  }
+  /*  Design for help center */
+  .button-container .help-center {
+    width: 100%;
+  }
+  .button-container .help-center h2 {
+    font-size: 15px;
+  }
+  .button-container .help-center p {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .powered-by-stripe span {
+    font-size: 20px;
+  }
+
+  /* Design for the second container */
+  section .second-container {
+    display: none;
+  }
+  .terms-services {
+    font-size: 14px;
+  }
+}

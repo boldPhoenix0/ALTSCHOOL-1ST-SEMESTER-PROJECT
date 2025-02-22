@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 5</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jockey+One&family=Kode+Mono:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Noto+Sans+Hatran&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  </head>
+  <body>
+    <header>
+      <nav>
+      <ul class="nav-links">
+        <li class="logo">
+          <a href="#"> <img src="./asset/wppusher-logo copy.svg" alt="logo" /></a>
+        </li>
+        <input type="checkbox" id="check" />
+        <span class="checkbtn">
+          <li> <a href="">Download</a></li>
+          <li> <a href="">Learn more</a></li>
+          <li> <a href="">Pricing</a></li>
+         <li>  <a href="">Help</a></li>
+          <label for="check" class="close-menu">
+            <i class="fas fa-times"></i>
+          </label>
+        </span>
+        <label for="check" class="open-menu">
+          <i class="fas fa-bars"></i>
+        </label>
+      </ul>             
+          <button>Account</button>
+        </div>
+      </nav>
+      <hr />
+    </header>
+
+    <section>
+      <div class="container">
+        <h1>Checkout</h1>
+        <div class="basic-infos-container">
+          <div class="basic-info">
+            <h3 class="number">1</h3>
+            <h3 class="Numn">Your Basic Information</h3>
+          </div>
+          <div class="forms">
+            <div>
+              <label for="first-name">First Name</label>
+              <input type="text" placeholder="Jane" required />
+            </div>
+            <div>
+              <label for="Last-Name">Last Name</label>
+              <input type="text" placeholder="Deo" />
+            </div>
+          </div>
+          <div class="email-box">
+            <label for="email">E-mail</label>
+            <input type="email" placeholder="janedoe@example.com" required />
+          </div>
+        </div>
+        <div class="payment-info">
+          <div class="basic-info">
+            <h3 class="number">2</h3>
+            <h3>Your Payment Information</h3>
+          </div>
+          <div class="credit-card">
+            <label for="credit-card">Credit Card</label>
+            <div class="card-input">
+              <input
+                type="text"
+                class="card-num"
+                placeholder="Card Number"
+                required
+              />
+              <input
+                type="text"
+                placeholder="MM / YY"
+                name="month-date"
+                id="MM-YY"
+                required
+              />
+              <input type="text" placeholder="CVV" id="cvv" required />
+            </div>
+          </div>
+        </div>
+        <div class="button-container">
+          <button class="first-button">Buy WP Pusher</button>
+          <div class="help-center">
+            <h2>?</h2>
+            <p>
+              Need any help? <span> Don't hesitate to contact support!</span>
+            </p>
+          </div>
+
+          <div class="powered-by-stripe">
+            <p>Powered by <span>Stripe</span></p>
+          </div>
+        </div>
+      </div>
+      <div class="second-container">
+        <div class="info-page">
+          <h2 class="Freelancer">Freelancer</h2>
+          <p class="price">
+            <span class="currency">$</span>
+            <span class="amount">99</span>
+            <span class="duration">/ year</span>
+          </p>
+          <p class="info-renewal">Automatically renews after 1 year</p>
+          <ul class="features">
+            <li><span class="checkmark">✔</span> Use on 5 client sites</li>
+            <li><span class="checkmark">✔</span> Private repositories</li>
+            <li><span class="checkmark">✔</span> Email support</li>
+          </ul>
+          <p class="additional-info">
+            Need 20 client sites? <a href="#">Switch to the Agency plan</a>.
+          </p>
+        </div>
+        <p class="last-para">
+          FTP is horrible to deal with. WP Pusher solves that issue, and the
+          customer support is awesome!
+        </p>
+        <div class="last-image-con" >
+          <img src="./asset/Bitmap.svg" alt="A man image">
+          <p>Kirk Beard</p>
+        </div>
+      </div>
+    </section>
+    <p class="terms-services">© 2018 WP Pusher IVS  ·  <span>Terms of Service</span></p>
+  </body>
+</html>
